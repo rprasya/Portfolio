@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar style start */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/nelson-ndongala-MN8V5iy24Rg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.box-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1 > h1 {
+    font-size: 38px;
+    color: white;
+}
+
+.box2 > ul {
+    display: flex;
+}
+
+.box2 > ul > li {
+    list-style-type: none;
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+.box2 > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.box2 > ul > li > a:hover {
+    color: crimson;
+    transition: all 0.3s ease-in-out;
+}
+
+.box2 > ul > li > i {
+    display: none;
+}
+
+.box-menubar {
+    display: none;
+}
+/* navbar style end */
+
+/* hero style start */
+.hero {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.hero > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* hero style end */
+
+/* history style start */
+.history {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1faee;
+}
+
+.box-history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-history1 {
+    padding-right: 30px;
+}
+
+.box-history1 > h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.box-history1 > p {
+    line-height: 2;
+}
+
+.box-history2 > img {
+    width: 700px;
+    border-radius: 10px;
+}
+/* history style end */
+
+/* champions style start */
+.champion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e63946;
+}
+
+.box-champion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-champion1 {
+    text-align: center;
+    margin-inline: 20px;
+}
+
+.box-champion1 > img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box-champion1 > h1 {
+    color: white;
+}
+
+.box-champion1 > p {
+    color: white;
+}
+/* champions style end */
+
+/* gallery style start */
+.gallery {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f1faee;
+}
+
+.box-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-gallery > img {
+    height: 500px;
+    margin: 20px;
+}
+/* gallery style end */
+
+/* contact style start */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e63946;
+}
+
+.box-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-contact > h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.tr-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.tr-contact > td > label {
+    font-size: 20px;
+    color: white;
+}
+
+#nama {
+    padding: 15px 60px 15px 20px;
+    margin: 10px 0 20px 0;
+}
+
+#email {
+    padding: 15px 60px 15px 20px;
+    margin: 10px 0 20px 0;
+}
+
+#pesan {
+    margin-top: 10px;
+    padding: 15px 200px 200px 20px;
+}
+/* contact style end */
+
+/* footer style start */
+.footer {
+    background-color: #f1faee;
+}
+
+.footer > p {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+/* footer style end */
+
+@media screen and (max-width: 1200px) {
+    /* history style start */
+    .box-history2 > img {
+        width: 500px;
+    }
+    /* history style end */
+}
+
+@media screen and (max-width: 990px) {
+    /* navbar style start */
+    .box2 {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 52px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out
+    }
+
+    .menu-active {
+        opacity: 1;
+        top: 100px;
+    }
+
+    .box2 > ul {
+        flex-direction: column;
+    }
+
+    .box2 > ul > li {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 15px 0;
+        margin-left: 0;
+    }
+
+    .box2 > ul > li > a {
+        color: black;
+    }
+
+    .box2 > ul > li > i {
+        display: inline-block;
+        margin-inline: 10px;
+        font-size: 24px;
+    }
+
+    .box-menubar {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+    }
+    /* navbar style end */
+
+    /* hero style start */
+    .hero > h1 {
+        font-size: 40px;
+    }
+    /* hero style end */
+
+    /* history style start */
+    .box-history {
+        flex-direction: column-reverse;
+    }
+
+    .box-history1 {
+        text-align: center;
+        margin-top: 30px;
+        padding-right: 0;
+    }
+
+    .box-history2 > img {
+        width: 500px;
+    }
+    /* history style end */
+
+    /* champions style start */
+    .champion {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .box-champion {
+        flex-direction: column;
+    }
+
+    .box-champion1 {
+        margin-bottom: 30px;
+    }
+
+    .box-champion1 > img {
+        width: 400px;
+    }
+    /* champions style end */
+
+    /* gallery style  */
+    .box-gallery > img {
+        height: 350px;
+    }
+    /* gallery style end */
+}
+
+@media screen and (max-width: 902px) {
+    /* hero style start */
+    .hero >h1 {
+        font-size: 35px;
+    }
+    /* hero style end */
+}
+
+@media screen and (max-width: 783px) {
+    /* hero style start */
+    .hero >h1 {
+        font-size: 28px;
+    }
+    /* hero style end */
+
+    /* gallery style  */
+    .box-gallery > img {
+        height: 300px;
+    }
+    /* gallery style end */
+
+    /* contact style start */
+    .contact {
+        height: 100%;
+        padding: 100px 0 100px 0;
+    }
+
+    .box-contact > h1 {
+        margin-bottom: 50px;
+    }
+
+    .box-contact {
+        flex-direction: column;
+    }
+    /* contact style end */
+}
+
+@media screen and (max-width: 575px) {
+    /* history style start */
+    .box-history1 > h1 {
+        font-size: 34px;
+    }
+
+    .box-history1 > p {
+        font-size: 14px;
+    }
+
+    .box-history2 > img {
+        width: 400px;
+    }
+    /* history style end */
+
+    /* champions style start */
+    .box-champion1 > img {
+        width: 300px;
+    }
+
+    .box-champion1 > h1 {
+        font-size: 18px;
+    }
+
+    .box-champion1 > p {
+        font-size: 14px;
+    }
+    /* champions style end */
+
+    /* contact style start */
+    #nama {
+        padding: 10px 50px 15px 20px;
+    }
+
+    #email {
+        padding: 10px 50px 15px 20px;
+    }
+
+    #pesan {
+        padding: 15px 150px 150px 20px;
+    }
+    /* contact style end */
+}
+
+@media screen and (max-width: 475px) {
+    /* hero style start */
+    .hero > h1 {
+        font-size: 25px;
+    }
+    /* hero style end */
+
+    /* history style start */
+    .box-history1 > h1 {
+        font-size: 30px;
+    }
+
+    .box-history1 > p {
+        font-size: 13px;
+    }
+
+    .box-history2 > img {
+        width: 350px;
+    }
+    /* history style end */
+}
+
+@media screen and (max-width: 375px) {
+    /* navbar style start */
+    .box2 {
+        right: 25px;
+    }
+    /* navbar style end */
+
+    /* history style start */
+    .box-history1 > h1 {
+        font-size: 24px;
+    }
+
+    .box-history1 > p {
+        font-size: 12px;
+    }
+
+    .box-history2 > img {
+        width: 300px;
+    }
+    /* history style end */
+
+    /* champions style start */
+    .box-champion1 > img {
+        width: 250px;
+    }
+
+    .box-champion1 > h1 {
+        font-size: 16px;
+    }
+
+    .box-champion1 > p {
+        font-size: 12px;
+    }
+    /* champions style end */
+
+    /* contact style start */
+    .contact {
+        padding: 120px 0 120px 0;
+    }
+
+    .box-contact > h1 {
+        font-size: 28px;
+    }
+
+     #nama {
+        padding: 10px 40px 15px 20px;
+    }
+
+    #email {
+        padding: 10px 40px 15px 20px;
+    }
+
+    #pesan {
+        padding: 15px 100px 100px 20px;
+    }
+    /* contact style end */
+}
